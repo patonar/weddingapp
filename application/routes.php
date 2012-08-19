@@ -1,5 +1,9 @@
 <?php
 
+Route::controller('credential');
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes

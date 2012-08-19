@@ -66,8 +66,8 @@ return array(
 		),
 
 		'twitter' => array(
-			'key'    => '',
-			'secret' => '',
+			'key'    => 'DC6k63D3X8PdZjVsB7b3Mg',
+			'secret' => '3qidlUNCDczvetzYEzOadFJImTuP5ls3HwLvOJWZA',
 		),
 
 		'vimeo' => array(
