@@ -36,5 +36,6 @@
 return array(
 
 	'docs' => array('handles' => 'docs'),
+	'oneauth' => array('auto' => true),
 
 );
