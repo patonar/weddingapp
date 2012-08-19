@@ -70,9 +70,9 @@ return array(
 		'mysql' => array(
 			'driver'   => 'mysql',
 			'host'     => 'localhost',
-			'database' => 'database',
+			'database' => 'weddingapp',
 			'username' => 'root',
-			'password' => '',
+			'password' => 'xTAMj9HQ',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 		),
