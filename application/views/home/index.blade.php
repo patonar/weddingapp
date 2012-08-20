@@ -8,7 +8,6 @@
 	{{ HTML::style('laravel/css/style.css') }}
 </head>
 <body>
-	{{ HTML::to('credential/session/twitter', 'Sign-in with Twitter') }}
 	<div class="wrapper">
 		<header>
 			<h1>Laravel</h1>
