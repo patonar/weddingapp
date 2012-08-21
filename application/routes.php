@@ -1,7 +1,7 @@
 <?php
 
 Route::controller('credential');
-
+Route::controller('checklists');
 
 
 /*
