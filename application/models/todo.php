@@ -3,7 +3,7 @@
 class Todo extends Eloquent 
 {
 
-	public function('Checklist')
+	public function Checklist()
 	{
 
 		return $this->belongs_to('Checklist');

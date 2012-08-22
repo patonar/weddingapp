@@ -10,8 +10,9 @@ class Checklists_Controller extends Base_Controller {
 		$newone->description = 'This is the description';
 		$newone->save();
 
-		$checklist = Checklist::all();
-	
+		//$checklist = Checklist::all();
+		
+		$checklist = Checklist::with('todo')->get();
 
 
 		return view::make('checklist.index', array('checklists' =>$checklist));
