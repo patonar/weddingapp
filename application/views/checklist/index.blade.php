@@ -8,8 +8,18 @@
 	{{ HTML::style('laravel/css/style.css') }}
 </head>
 
+
+
+
 @foreach ($checklists as $check)
-	<h2> {{ $check->title }}</h2>
-	<h3> {{$check->description}}</h2>
+	<h3> <b>{{ $check->title }} </b>- {{$check->description}}</h3>
+	
+
+		@foreach ($check->todo as $todo)
+			<li> {{$todo->title}}</li>
+			<li> {{$todo->description}}</li>
+			<li> {{$todo->due}}</li>
+		@endforeach
+
 	<hr>
 @endforeach
