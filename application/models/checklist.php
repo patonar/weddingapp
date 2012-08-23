@@ -6,6 +6,7 @@ class Checklist extends Eloquent
 	{
 
 		return $this->has_many('Todo');
+		return $this->belongs_to('User');
 
 	}
 }

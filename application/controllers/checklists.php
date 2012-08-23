@@ -2,24 +2,22 @@
 
 class Checklists_Controller extends Base_Controller {
 
-	public function action_index()
+	public $restful = true;
+
+	public function get_index()
 	{
 
-		$newone = new Checklist;
-		$newone->title = 'This is the title';
-		$newone->description = 'This is the description';
-		$newone->save();
 
-		$checklist = Checklist::all();
+		$checklist = Checklist::with('Todo')->get();
 	
 
 
 		return view::make('checklist.index', array('checklists' =>$checklist));
 	}
 
-	public function action_show()
+	public function post_checklist()
 	{
-
+		//
 	}
 
 	public function action_edit()

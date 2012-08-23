@@ -6,10 +6,18 @@
 	<title>Laravel: A Framework For Web Artisans</title>
 	<meta name="viewport" content="width=device-width">
 	{{ HTML::style('laravel/css/style.css') }}
+	{{ HTML::style('css/css.css')}}
 </head>
-
+<ul class='todoList'>
 @foreach ($checklists as $check)
-	<h2> {{ $check->title }}</h2>
-	<h3> {{$check->description}}</h2>
-	<hr>
+	
+	<li class='todoList'> 
+	<div class="text">{{ $check->title }} </div>
+				
+		<div class="actions">
+			<a href="#" class="edit">Edit</a>
+			<a href="#" class="delete">Delete</a>
+		</div>
+	</li>
 @endforeach
+</ul>
