@@ -8,6 +8,7 @@
 	{{ HTML::style('laravel/css/style.css') }}
 	{{ HTML::style('css/css.css')}}
 </head>
+
 <ul class='todoList'>
 @foreach ($checklists as $check)
 	
@@ -18,6 +19,18 @@
 			<a href="#" class="edit">Edit</a>
 			<a href="#" class="delete">Delete</a>
 		</div>
+		<ul>
+			@foreach ($check->todo as $todo)
+				<li> {{$todo->title}}</li>
+				<li> {{$todo->description}}</li>
+				<li> {{$todo->due}}</li>
+			@endforeach
+		</ul>
+
 	</li>
 @endforeach
 </ul>
+
+
+
+

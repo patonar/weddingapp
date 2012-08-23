@@ -8,8 +8,8 @@ class Checklists_Controller extends Base_Controller {
 	{
 
 
-		$checklist = Checklist::with('Todo')->get();
-	
+		
+		$checklist = Checklist::with('todo')->get();
 
 
 		return view::make('checklist.index', array('checklists' =>$checklist));
